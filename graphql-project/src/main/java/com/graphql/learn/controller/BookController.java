@@ -33,9 +33,9 @@ public class BookController {
 	}
 	
 	@GetMapping("/{bookId}")
-	public List<Book> getBook(@PathVariable int bookId)
+	public Book getBook(@PathVariable int bookId)
 	{
-		return (List<Book>) bookService.get(bookId);
+		return bookService.get(bookId);
 	}
 
 }
